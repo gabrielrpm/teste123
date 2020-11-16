@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W486KTX');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Portal G3</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="/bielscripts.js"></script>
+  <script>require('initialize');</script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W486KTX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  
+  
+  <div class="container">
+    <div style="background-color: #fff; padding-top: 35px;" class="row justify-content-center ">
+      <div class="col-lg-7">
+        <style>
+         #modal-overlay {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background : #2a2a2a;
+    opacity    : 1;
+    filter     : alpha(opacity=60);
+    z-index    : 5;
+    display    : none;
+}
+
+#demo{
+  z-index:125;
+  position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+}
+#texto{
+  
+  text-align: center;
+  color: #fff;
+  
+  
+ 
+  
+}
+
+
+
+        </style>
+
+<a id="link" href="#">click me</a>
+
+
+
+        <script>
+          $(document).ready(function(){
+$('#link').on('click', function () {
+ 
+  $("body").prepend( '<div style="background:#2a2a2a;padding:20px;border-radius:20px" id="demo"></div>' );
+    $('#demo').jQMeter({
+    goal:'$10,000',
+    raised:'$10,000',
+    width:'300px',
+    counterSpeed: 7000,
+    animationSpeed: 7000
+});
+
+
+});
+ 
+})
+        </script>
+        <script>  
+        !function(e){e.fn.extend({jQMeter:function(t){t&&"object"==typeof t&&(t=e.extend({},e.jQMeter.defaults,t)),this.each(function(){new e.jQMeter(this,t)})}}),e.jQMeter=function(t,r){if(goal=parseInt(r.goal.replace(/\D/g,"")),raised=parseInt(r.raised.replace(/\D/g,"")),width=r.width,height=r.height,bgColor=r.bgColor,barColor=r.barColor,meterOrientation=r.meterOrientation,animationSpeed=r.animationSpeed,counterSpeed=r.counterSpeed,displayTotal=r.displayTotal,total=raised/goal*100,total>=100&&(total=100),"vertical"==meterOrientation?(e(t).html('<div class="therm outer-therm vertical"><div class="therm inner-therm vertical"><span style="display:none;">'+total+"</span></div></div>"),e(t).children(".outer-therm").attr("style","width:"+width+";height:"+height+";background-color:"+bgColor),e(t).children(".outer-therm").children(".inner-therm").attr("style","background-color:"+barColor+";height:0;width:"+width),e(t).children(".outer-therm").children(".inner-therm").animate({height:total+"%"},animationSpeed)):(e(t).html('<p style="text-align:center;color:#fff;margin-bottom:0px">Aplicando Cupom de Desconto</p><div class="therm outer-therm"><div class="therm inner-therm"><span style="display:none;">'+total+"</span></div></div>"),e(t).children(".outer-therm").attr("style","width:"+width+";height:"+height+";background-color:"+bgColor),e(t).children(".outer-therm").children(".inner-therm").attr("style","background-color:"+barColor+";height:"+height+";width:0"),e(t).children(".outer-therm").children(".inner-therm").animate({width:total+"%"},animationSpeed)),displayTotal){var i=parseInt(height),n=i/2-13+"px 10px";"horizontal"!=meterOrientation&&(n="10px 0"),e(t).children(".outer-therm").children(".inner-therm").children().show(),e(t).children(".outer-therm").children(".inner-therm").children().css("padding",n),e({Counter:0}).animate({Counter:e(t).children(".outer-therm").children(".inner-therm").children().text()},{duration:counterSpeed,easing:"swing",step:function(){e(t).children(".outer-therm").children(".inner-therm").children().text(Math.ceil(this.Counter)+"%")}})}e(t).append("<style>.therm{height:30px;border-radius:5px;}.outer-therm{margin:5px 0;}.inner-therm span {color: #fff;display: inline-block;float: right;font-family: Trebuchet MS;font-size: 20px;font-weight: bold;}.vertical.inner-therm span{width:100%;text-align:center;}.vertical.outer-therm{position:relative;}.vertical.inner-therm{position:absolute;bottom:0;}</style>")},e.jQMeter.defaults={width:"100%",height:"50px",bgColor:"#444",barColor:"#bfd255",meterOrientation:"horizontal",animationSpeed:2e3,counterSpeed:2e3,displayTotal:!0}}(jQuery);</script>
+
+
+<style>
+  
+</style>
+      
+        </div>
+      </div>
+
+
+
+
+    </div>
+ 
+
+
+</body>
